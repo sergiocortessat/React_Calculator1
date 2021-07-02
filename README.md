@@ -1,4 +1,4 @@
-                                                                                        ## React Calculator App
+                                            ## React Calculator App
 
 <p align="center">
   <img height="auto" src="customlogo.png">
@@ -38,8 +38,6 @@
 ## Live Version
 
 * [Live Demo](https://react-calculator-sc.herokuapp.com/) 
-
-<!-- ABOUT THE PROJECT   -->
 
 <br />
 
