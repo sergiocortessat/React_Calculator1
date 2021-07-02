@@ -1,5 +1,8 @@
-# React Calculator App
+                                                                                        ## React Calculator App
 
+<p align="center">
+  <img height="auto" src="customlogo.png">
+</p>
 
 ## Table of Contents
 
@@ -14,7 +17,6 @@
 * [Getting Started](#getting-started) 
 * [Live Demo](#live-version) 
 
-#
 <br />
 
 ![Javascript](https://img.shields.io/badge/Javascript-3776AB?style=for-the-badge&logo=javascript&logoColor=white) <br/>
@@ -35,13 +37,15 @@
 
 ## Live Version
 
-* [Live Demo](https://sergiocortessat.github.io/React_Rick-MortyAPI/) 
+* [Live Demo](https://react-calculator-sc.herokuapp.com/) 
 
 <!-- ABOUT THE PROJECT   -->
 
 <br />
 
 ## About The Project
+
+The React Calculator creates a web application capable of displaying a calculator layout face and its proper functionality to perform all necessary operations a calculator can
 
 <br />
 
@@ -60,20 +64,18 @@ Terminal or similar to execute the program.
 
 ## Clone project
 - To get a local copy up and running follow these simple example steps.
-- Clone this repository with git clone ```https://github.com/sergiocortessat/React_Rick-MortyAPI/``` using your terminal or command line.
-- Change to the project directory by entering: ```cd React_Rick-MortyAPI``` in the terminal.
+- Clone this repository with git clone ```https://github.com/sergiocortessat/React_Calculator1/tree/milestone_1``` using your terminal or command line.
+- Change to the project directory by entering: ```cd React_Calculator1``` in the terminal.
 - Enter the command npm i
 - Enter the project folder and run locally by using npm start.
-- If the project cant be build, please run npx webpack.
 
 ## Command line steps
 ```
-- $ git clone `$ git clone https://github.com/sergiocortessat/React_Rick-MortyAPI
+- $ git clone `$ git clone https://github.com/sergiocortessat/React_Calculator1/tree/milestone_1
 - $ git checkout develop
-- $ cd JSCapstone-PlatformGame
+- $ cd React_Calculator1
 - $ npm i
 - $ npm start
-- ##(If project doesn't build, please run): $ npx webpack
 ```
 
 
@@ -94,5 +96,3 @@ Terminal or similar to execute the program.
 ## 📝 License
 
 This project is [MIT](https://github.com/sergiocortessat/sergiocortessat/blob/main/LICENSE) licensed.
-
-
