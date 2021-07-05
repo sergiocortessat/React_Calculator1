@@ -38,6 +38,15 @@ export default class App extends Component {
       } else {
         result = next;
       }
+    } else if (operation === '%') {
+      if (total && operation && next) {
+        result = total * 100 + next * 100 + operation;
+        result = total + next + operation;
+      } else {
+        result = total * 100 + operation;
+      }
+    } else if (operation !== '%') {
+      result = next ? total + operation + next : total + operation;
     } else {
       result = next === null ? operation : next;
     }

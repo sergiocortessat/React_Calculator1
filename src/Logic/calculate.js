@@ -12,7 +12,7 @@ const Calculate = (data, buttonName) => {
     total = (total * (-1)).toString();
     next = (next * (-1)).toString();
   } else if (buttonName === '%') {
-    next = (0.01 * total).toString();
+    total = (0.01 * total).toString();
     operation = '%';
   } else if (buttonName === '=') {
     if (total && next && operation) {
@@ -22,9 +22,9 @@ const Calculate = (data, buttonName) => {
     }
   } else if (operations.includes(buttonName)) {
     operation = buttonName;
-  } else if (operation && digits.includes(buttonName)) {
+  } else if ((operation && digits.includes(buttonName)) || (operation && buttonName === '.')) {
     next = next ? next + buttonName : buttonName;
-  } else if (digits.includes(buttonName)) {
+  } else if (digits.includes(buttonName) || buttonName === '.') {
     total = total ? total + buttonName : buttonName;
   }
   return { total, next, operation };
