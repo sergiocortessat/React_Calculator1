@@ -39,19 +39,14 @@ export default class App extends Component {
         result = next;
       }
     } else if (operation === '%') {
-      if (total && operation && next) {
-        result = total * 100 + next * 100 + operation;
-        result = total + next + operation;
-      } else {
-        result = total * 100 + operation;
-      }
+      result = operation ? total : `${total}%`;
     } else if (operation !== '%') {
       result = next ? total + operation + next : total + operation;
     } else {
       result = next === null ? operation : next;
     }
     return (
-      <div>
+      <div className="app">
         <h4>Welcome to Math Magicians</h4>
         <Display result={result} />
         <ButtonPanel handleClick={this.handleClick} />

@@ -12,8 +12,14 @@ const Calculate = (data, buttonName) => {
     total = (total * (-1)).toString();
     next = (next * (-1)).toString();
   } else if (buttonName === '%') {
-    total = (0.01 * total).toString();
-    operation = '%';
+    if (total && next && operation) {
+      total = (Operate(total, next, operation) / 100).toString();
+      next = null;
+      operation = '%';
+    } else {
+      total = (0.01 * total).toString();
+      operation = '%';
+    }
   } else if (buttonName === '=') {
     if (total && next && operation) {
       total = Operate(total, next, operation);
