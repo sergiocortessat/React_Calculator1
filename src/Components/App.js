@@ -48,8 +48,10 @@ export default class App extends Component {
     return (
       <div className="app">
         <h4>Welcome to Math Magicians</h4>
-        <Display result={result} />
-        <ButtonPanel handleClick={this.handleClick} />
+        <div>
+          <Display result={result} />
+          <ButtonPanel handleClick={this.handleClick} />
+        </div>
       </div>
     );
   }

@@ -1,3 +1,37 @@
 body {
   background-color: rgb(179, 247, 224);
 }
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.display-box {
+  height: 5vh;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  background-color: white;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.display-box > p {
+  padding-left: 10px;
+  padding-right: 10px;
+} 
+
+button {
+  font-size: 0.9rem;
+  width: 50px;
+  border: 2px solid yellow;
+}
+
+button:hover {
+  background-color: #6b4118;
+  color: #fff;
+}
