@@ -12,18 +12,19 @@ body {
 }
 
 .display-box {
-  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
   border: 1px solid black;
   margin-bottom: 20px;
   background-color: white;
   margin-top: 10px;
-  text-align: center;
 }
 
 .display-box > p {
-  padding-left: 10px;
-  padding-right: 10px;
-} 
+  margin: auto;
+}
 
 button {
   font-size: 0.9rem;
