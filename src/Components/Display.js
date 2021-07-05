@@ -2,9 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Display = ({ result }) => (
-  <div>
-    {result}
-  </div>
+  <input className="input text-end" defaultValue={result} />
 );
 
 Display.propTypes = {
