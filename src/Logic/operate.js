@@ -3,17 +3,19 @@ import Big from 'big.js';
 let result = Infinity;
 
 const Operate = (numberOne = null, numberTwo = null, operation) => {
+  const numOne = new Big(numberOne);
+  const numTwo = new Big(numberTwo);
   const operations = ['+', '-', 'X', '/', '%'];
   if (operations.includes(operation)) {
     if (operation === '+') {
-      result = new Big(numberOne).plus(new Big(numberTwo));
+      result = numOne.plus(numTwo);
     } else if (operation === '-') {
-      result = new Big(numberOne).minus(new Big(numberTwo));
+      result = numOne.minus(numTwo);
     } else if (operation === 'X') {
-      result = new Big(numberOne).times(new Big(numberTwo));
+      result = numOne.times(numTwo);
     } else if (operation === '/') {
       try {
-        result = new Big(numberOne).div(new Big(numberTwo));
+        result = numOne.div(numTwo);
       } catch (error) {
         return 'Infinity';
       }

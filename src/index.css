@@ -1,3 +1,38 @@
 body {
   background-color: rgb(179, 247, 224);
 }
+
+.app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.display-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border: 1px solid black;
+  margin-bottom: 20px;
+  background-color: white;
+  margin-top: 10px;
+}
+
+.display-box > p {
+  margin: auto;
+}
+
+button {
+  font-size: 0.9rem;
+  width: 50px;
+  border: 2px solid yellow;
+}
+
+button:hover {
+  background-color: #6b4118;
+  color: #fff;
+}
