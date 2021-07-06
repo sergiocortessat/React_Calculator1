@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+body {
+  color: #218c74;
+  background-image: url(../assets/matrix.gif);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: auto; /* Resize the background image to cover the entire container */
+}
+
+/* General setup for the app parent folder */
+
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 50px;
+}
+
+/* h2 welcome title */
+
+.title {
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: rgba(12.9, 54.9, 45.5, 0.8);
+  max-width: 50%;
+  border-radius: 10px;
+  box-shadow:
+  rgba(12, 138, 37, 0.905) 0 5px 10px,
+  rgba(121, 123, 122, 0.05) 0 5px 10px;
+  font-family: 'Permanent Marker', cursive;
+}
+
+/* h4 title  */
+
+.title-2 {
+  font-family: 'Permanent Marker', cursive;
+}
+
+/* Style for the display box */
+.display-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin-bottom: 20px;
+  background-color: rgba(47, 47, 87, 0.5);
+  margin-top: 10px;
+  box-shadow:
+  rgba(12, 138, 37, 0.905) 0 5px 5px,
+  rgba(121, 123, 122, 0.05) 0 5px 10px;
+  border-radius: 10px;
+  color: white;
+}
+
+.display-box > p {
+  margin: auto;
+}
+
+/* Style for Button Panel */
+
+.buttons-panel {
+  border-radius: 10px;
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 0;
+  background-color: rgba(47, 47, 87, 0.5);
+  box-shadow:
+    rgba(12, 138, 37, 0.905) 0 5px 5px,
+    rgba(121, 123, 122, 0.05) 0 10px 10px;
+}
+
+/* Button style */
+
+button {
+  font-size: 0.9rem;
+  border-radius: 10px;
+  width: 50px;
+  margin: 5px;
+  box-shadow:
+    rgba(0, 0, 0, 0.25) 0 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0 0 0 1px inset;
+}
