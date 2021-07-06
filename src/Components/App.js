@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unused-state */
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 import Calculate from '../Logic/calculate';
@@ -45,13 +45,16 @@ export default class App extends Component {
       result = next === null ? operation : next;
     }
     return (
-      <div className="app">
-        <h4>Welcome to Math Magicians</h4>
-        <div>
-          <Display result={result} />
-          <ButtonPanel handleClick={this.handleClick} />
+      <>
+        <h2 className="title">Welcome to math magicians</h2>
+        <div className="app">
+          <h4 className="title-2">The Matrix Calculator</h4>
+          <div>
+            <Display result={result} />
+            <ButtonPanel handleClick={this.handleClick} />
+          </div>
         </div>
-      </div>
+      </>
     );
   }
 }
