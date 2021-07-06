@@ -3,6 +3,7 @@ import React, { Component, Fragment } from 'react';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 import Calculate from '../Logic/calculate';
+// import backgroundH from '../assets/lofi.gif';
 
 export default class App extends Component {
   constructor(props) {
@@ -44,6 +45,7 @@ export default class App extends Component {
     } else {
       result = next === null ? operation : next;
     }
+    // document.body.style.backgroundImage = `url(${backgroundH})`;
     return (
       <>
         <h2 className="title">Welcome to math magicians</h2>

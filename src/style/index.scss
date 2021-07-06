@@ -6,9 +6,11 @@ $green-shadow:
 
 body {
   color: #218c74;
-  background-image: url(../assets/matrix.gif);
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(../assets/matirx3.gif);
+  // background-position: center; /* Center the image */
+  // background-repeat: no-repeat; /* Do not repeat the image */
   background-size: auto; /* Resize the background image to cover the entire container */
 }
 
@@ -49,7 +51,7 @@ body {
   align-items: center;
   height: 50px;
   margin-bottom: 20px;
-  background-color: rgba(47, 47, 87, 0.5);
+  background-color: rgba(47, 47, 87, 0.7);
   margin-top: 10px;
   box-shadow: $green-shadow;
   border-radius: 10px;
@@ -70,7 +72,7 @@ body {
   justify-content: flex-end;
   align-items: center;
   padding: 10px 0;
-  background-color: rgba(47, 47, 87, 0.5);
+  background-color: rgba(47, 47, 87, 0.7);
   box-shadow: $green-shadow;
 }
 
