@@ -3,7 +3,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const Button = ({ buttonName, handleClick }) => {
+const Button = ({ buttonName, clickHandler }) => {
   const buttonClass = buttonName === "="
     ? "hvr-sweep-to-right buttonEqual"
     : buttonName === "AC"
@@ -13,7 +13,7 @@ const Button = ({ buttonName, handleClick }) => {
     <button
       type="button"
       value={buttonName}
-      onClick={() => handleClick(buttonName)}
+      onClick={() => clickHandler(buttonName)}
       className={buttonClass}
     >
       {buttonName}
@@ -23,11 +23,11 @@ const Button = ({ buttonName, handleClick }) => {
 
 Button.propTypes = {
   buttonName: PropTypes.string.isRequired,
-  handleClick: PropTypes.func,
+  clickHandler: PropTypes.func,
 };
 
 Button.defaultProps = {
-  handleClick: undefined,
+  clickHandler: undefined,
 };
 
 export default Button;
