@@ -51,7 +51,7 @@ registerRoute(
 // precache, in this case same-origin .png requests like those from in public/
 registerRoute(
   // Add in any other file extensions or routing criteria as needed.
-  ({url}) => url.pathname.startsWith(''),
+  ({url}) => url.pathname.startsWith('/social-timeline/'),
   new NetworkFirst()
 );
 
