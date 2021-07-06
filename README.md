@@ -4,6 +4,12 @@
   <img height="auto" src="customlogo.png">
 </p>
 
+## Live Version
+
+* [Live Demo](https://calculator-scs.herokuapp.com/) 
+
+<br />
+
 ## Table of Contents
 
 <br />
@@ -35,11 +41,6 @@
 
 <br />
 
-## Live Version
-
-* [Live Demo](https://calculator-scs.herokuapp.com/) 
-
-<br />
 
 ## About The Project
 
