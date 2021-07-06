@@ -29,7 +29,7 @@ body {
 button {
   font-size: 0.9rem;
   width: 50px;
-  border: 2px solid yellow;
+  border: 2px solid orange;
 }
 
 button:hover {
