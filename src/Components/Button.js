@@ -6,6 +6,7 @@ const Button = ({ buttonName, handleClick }) => (
     type="button"
     value={buttonName}
     onClick={() => handleClick(buttonName)}
+    className="hvr-radial-in"
   >
     {buttonName}
   </button>
