@@ -34,7 +34,7 @@ export default class App extends Component {
       <>
         <h2 className="title">Welcome to math magicians</h2>
         <div className="app">
-          <h4 className="title-2">The Matrix Calculator</h4>
+          <h4 className="title-2 text-center">The Matrix Calculator</h4>
           <div>
             <Display result={result} />
             <ButtonPanel clickHandler={this.handleClick} />
