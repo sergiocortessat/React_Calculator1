@@ -1,8 +1,14 @@
-                                            ## React Calculator App
+## React Calculator App
 
 <p align="center">
   <img height="auto" src="customlogo.png">
 </p>
+
+## Live Version
+
+* [Live Demo](https://calculator-scs.herokuapp.com/) 
+
+<br />
 
 ## Table of Contents
 
@@ -21,7 +27,7 @@
 
 ![Javascript](https://img.shields.io/badge/Javascript-3776AB?style=for-the-badge&logo=javascript&logoColor=white) <br/>
 ![React](https://img.shields.io/badge/React-092E20?style=for-the-badge&logo=react&logoColor=white) <br/>
-![Sass](https://img.shields.io/badge/Sass-092E20?style=for-the-badge&logo=sass&logoColor=white) <br/>
+![Scss](https://img.shields.io/badge/Sass-092E20?style=for-the-badge&logo=sass&logoColor=white) <br/>
 
 ## Screenshot
 
@@ -35,11 +41,6 @@
 
 <br />
 
-## Live Version
-
-* [Live Demo](https://react-calculator-sc.herokuapp.com/) 
-
-<br />
 
 ## About The Project
 
@@ -62,14 +63,14 @@ Terminal or similar to execute the program.
 
 ## Clone project
 - To get a local copy up and running follow these simple example steps.
-- Clone this repository with git clone ```https://github.com/sergiocortessat/React_Calculator1/tree/milestone_1``` using your terminal or command line.
+- Clone this repository with git clone ```https://github.com/sergiocortessat/React_Calculator1/``` using your terminal or command line.
 - Change to the project directory by entering: ```cd React_Calculator1``` in the terminal.
 - Enter the command npm i
 - Enter the project folder and run locally by using npm start.
 
 ## Command line steps
 ```
-- $ git clone `$ git clone https://github.com/sergiocortessat/React_Calculator1/tree/milestone_1
+- $ git clone `$ git clone https://github.com/sergiocortessat/React_Calculator1/
 - $ git checkout develop
 - $ cd React_Calculator1
 - $ npm i

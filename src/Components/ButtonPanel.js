@@ -11,13 +11,13 @@ const buttonGroups = {
 };
 
 const ButtonPanel = (props) => (
-  <div>
+  <div className="buttons-panel">
     <div>
       { buttonGroups.group_1.map((button) => (
         <Button
           key={button}
           buttonName={button}
-          handleClick={() => props.handleClick(button)}
+          clickHandler={() => props.clickHandler(button)}
         />
       ))}
     </div>
@@ -26,7 +26,7 @@ const ButtonPanel = (props) => (
         <Button
           key={button}
           buttonName={button}
-          handleClick={() => props.handleClick(button)}
+          clickHandler={() => props.clickHandler(button)}
         />
       ))}
     </div>
@@ -36,7 +36,7 @@ const ButtonPanel = (props) => (
         <Button
           key={button}
           buttonName={button}
-          handleClick={() => props.handleClick(button)}
+          clickHandler={() => props.clickHandler(button)}
         />
       ))}
     </div>
@@ -46,7 +46,7 @@ const ButtonPanel = (props) => (
         <Button
           key={button}
           buttonName={button}
-          handleClick={() => props.handleClick(button)}
+          clickHandler={() => props.clickHandler(button)}
         />
       ))}
     </div>
@@ -56,7 +56,7 @@ const ButtonPanel = (props) => (
         <Button
           key={button}
           buttonName={button}
-          handleClick={() => props.handleClick(button)}
+          clickHandler={() => props.clickHandler(button)}
         />
       ))}
     </div>
@@ -65,7 +65,7 @@ const ButtonPanel = (props) => (
 );
 
 ButtonPanel.propTypes = {
-  handleClick: PropTypes.func.isRequired,
+  clickHandler: PropTypes.func.isRequired,
 };
 
 export default ButtonPanel;

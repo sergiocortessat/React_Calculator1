@@ -1,8 +1,9 @@
 /* eslint-disable react/no-unused-state */
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
 import Calculate from '../Logic/calculate';
+import logic from '../Logic/logic';
 
 export default class App extends Component {
   constructor(props) {
@@ -28,30 +29,18 @@ export default class App extends Component {
 
   render() {
     const { total, next, operation } = this.state;
-    let result;
-    if (operation === null) {
-      result = total;
-    } else if (operation === '+/-') {
-      if (next === null || next === '0') {
-        result = total;
-      } else {
-        result = next;
-      }
-    } else if (operation === '%') {
-      result = operation ? total : `${total}%`;
-    } else if (operation !== '%') {
-      result = next ? total + operation + next : total + operation;
-    } else {
-      result = next === null ? operation : next;
-    }
+    const result = logic({ total, next, operation });
     return (
-      <div className="app">
-        <h4>Welcome to Math Magicians</h4>
-        <div>
-          <Display result={result} />
-          <ButtonPanel handleClick={this.handleClick} />
+      <>
+        <h2 className="title">Welcome to math magicians</h2>
+        <div className="app">
+          <h4 className="title-2 text-center">The Matrix Calculator</h4>
+          <div>
+            <Display result={result} />
+            <ButtonPanel clickHandler={this.handleClick} />
+          </div>
         </div>
-      </div>
+      </>
     );
   }
 }
