@@ -1,38 +1,19 @@
-import { useState, useEffect } from 'react';
-import Calculate from '../Logic/calculate';
-import Display from './Display';
-import ButtonPanel from './ButtonPanel';
-import logic from '../Logic/logic';
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+import Home from './Home';
+import Quotes from './Quotes';
+import Calculator from './Calculator';
 
-const App = () => {
-  const [total, setTotal] = useState(null);
-  const [operation, setOperation] = useState(null);
-  const [next, setNext] = useState(null);
-  const [result, setResult] = useState(null);
-  const handleClick = (buttonName) => {
-    const data = { total, operation, next };
-    const result = Calculate(data, buttonName);
-    setTotal(result.total);
-    setOperation(result.operation);
-    setNext(result.next);
-  };
-
-  useEffect(() => {
-    const resultLogic = logic({ total, next, operation });
-    setResult(resultLogic);
-  }, [result, total, next, operation]);
-
+function App() {
   return (
     <>
-      <h2 className="title">Welcome to math magicians</h2>
-      <div className="app">
-        <h4 className="title-2 text-center">The Matrix Calculator</h4>
-        <div>
-          <Display result={result} />
-          <ButtonPanel clickHandler={handleClick} />
-        </div>
-      </div>
+      <Home />
+      <Switch>
+        <Route path="/calculator" component={Calculator} />
+        <Route path="/quotes" component={Quotes} />
+      </Switch>
     </>
   );
-};
+}
+
 export default App;
