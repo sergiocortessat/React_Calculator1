@@ -5,7 +5,7 @@ import Home from '../Components/Home';
 import Calculator from '../Components/Calculator';
 import Quotes from '../Components/Quotes';
 
-it('renders correctly', () => {
+it('renders correctly the main App program', () => {
   const tree = renderer
     .create(
       <>
