@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import Calculate from '../Logic/calculate';
 import Display from './Display';
 import ButtonPanel from './ButtonPanel';
-import logic from '../Logic/logic';
+import logic from '../Logic/DisplayLogic';
 
 const Calculator = () => {
   const [total, setTotal] = useState(null);

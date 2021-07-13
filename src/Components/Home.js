@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import NavBar from './NavBar';
 import HomeMessage from './HomeMessage';
+import '../style/HomeTitle.scss';
 
 function Home() {
   return (

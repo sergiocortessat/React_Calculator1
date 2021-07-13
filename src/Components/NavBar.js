@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import styles from '../style/NavBar.module.scss';
 
 function NavBar() {
@@ -7,13 +7,13 @@ function NavBar() {
     <nav>
       <ul className={styles.navbar}>
         <li>
-          <Link to="/">Home </Link>
+          <NavLink activeClassName={styles.current} to="/" exact>Home </NavLink>
         </li>
         <li>
-          <Link to="/calculator">Calculator </Link>
+          <NavLink activeClassName={styles.current} to="/calculator" exact>Calculator </NavLink>
         </li>
         <li>
-          <Link to="/quotes">Quotes </Link>
+          <NavLink activeClassName={styles.current} to="/quotes" exact>Quotes </NavLink>
         </li>
       </ul>
     </nav>
