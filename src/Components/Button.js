@@ -15,6 +15,7 @@ const Button = ({ buttonName, clickHandler }) => {
       value={buttonName}
       onClick={() => clickHandler(buttonName)}
       className={buttonClass}
+      data-testid="button"
     >
       {buttonName}
     </button>
