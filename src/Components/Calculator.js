@@ -24,7 +24,7 @@ const Calculator = () => {
 
   return (
     <>
-      <div className="app">
+      <div className="app" data-testid="calculator">
         <h4 className="title-2 text-center">The Matrix Calculator</h4>
         <div>
           <Display result={result} />
