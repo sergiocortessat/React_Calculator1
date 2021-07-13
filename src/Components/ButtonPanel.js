@@ -11,7 +11,7 @@ const buttonGroups = {
 };
 
 const ButtonPanel = (props) => (
-  <div className="buttons-panel">
+  <div className="buttons-panel" data-testid="button-panel">
     <div>
       { buttonGroups.group_1.map((button) => (
         <Button
