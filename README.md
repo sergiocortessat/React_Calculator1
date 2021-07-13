@@ -6,7 +6,7 @@
 
 ## Live Version
 
-* [Live Demo](https://calculator-scs.herokuapp.com/) 
+* [Live Demo](https://calculator-pwa-scs.herokuapp.com/) 
 
 <br />
 
