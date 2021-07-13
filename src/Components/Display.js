@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Display = ({ result }) => (
-  <div className="display-box">
+  <div className="display-box" data-testid="display">
     <p>
       {result}
     </p>
