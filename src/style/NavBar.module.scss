@@ -1,7 +1,9 @@
 nav {
   margin-bottom: 50px;
   margin-top: 5px;
-  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  margin-left: 25px;
 }
 
 .navbar {
@@ -11,9 +13,9 @@ nav {
   margin: 10px;
   list-style: none;
   background-color: rgba(13, 55, 46, 0.8);
-  max-width: 380px;
   border-radius: 10px;
   font-family: "Permanent Marker", cursive;
+  justify-content: center;
 }
 
 .navbar li a {
