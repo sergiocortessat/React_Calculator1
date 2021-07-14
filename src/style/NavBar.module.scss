@@ -1,0 +1,26 @@
+nav {
+  margin-bottom: 50px;
+  margin-top: 5px;
+  font-size: 1.2rem;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto !important;
+  margin: 10px;
+  list-style: none;
+  background-color: rgba(13, 55, 46, 0.8);
+  max-width: 380px;
+  border-radius: 10px;
+  font-family: "Permanent Marker", cursive;
+}
+
+.navbar li a {
+  color: #218c74;
+  margin: 20px;
+}
+
+.current {
+  color: #1289a7 !important;
+}

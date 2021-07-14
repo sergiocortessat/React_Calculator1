@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly the quotes component 1`] = `
+Array [
+  <div
+    className="quotes"
+    data-testid="quote"
+  >
+    <h2>
+      Unfortunately, no one can be told what the Matrix is. You have to see it for yourself
+    </h2>
+    <p>
+      Morpheus
+    </p>
+  </div>,
+  <p>
+    Testing the rendering of Quotes component using snapshot
+  </p>,
+]
+`;

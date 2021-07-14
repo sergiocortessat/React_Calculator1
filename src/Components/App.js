@@ -1,46 +1,19 @@
-/* eslint-disable react/no-unused-state */
-import React, { Component, Fragment } from 'react';
-import Display from './Display';
-import ButtonPanel from './ButtonPanel';
-import Calculate from '../Logic/calculate';
-import logic from '../Logic/logic';
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+import Home from './Home';
+import Quotes from './Quotes';
+import Calculator from './Calculator';
 
-export default class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      total: null,
-      next: null,
-      operation: null,
-    };
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick(buttonName) {
-    const { total, next, operation } = this.state;
-    const data = { total, next, operation };
-    const result = Calculate(data, buttonName);
-    this.setState({
-      total: result.total,
-      next: result.next,
-      operation: result.operation,
-    });
-  }
-
-  render() {
-    const { total, next, operation } = this.state;
-    const result = logic({ total, next, operation });
-    return (
-      <>
-        <h2 className="title">Welcome to math magicians</h2>
-        <div className="app">
-          <h4 className="title-2 text-center">The Matrix Calculator</h4>
-          <div>
-            <Display result={result} />
-            <ButtonPanel clickHandler={this.handleClick} />
-          </div>
-        </div>
-      </>
-    );
-  }
+function App() {
+  return (
+    <>
+      <Home />
+      <Switch>
+        <Route path="/calculator" component={Calculator} />
+        <Route path="/quotes" component={Quotes} />
+      </Switch>
+    </>
+  );
 }
+
+export default App;

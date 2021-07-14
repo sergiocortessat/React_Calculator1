@@ -6,7 +6,7 @@
 
 ## Live Version
 
-* [Live Demo](https://calculator-scs.herokuapp.com/) 
+* [Live Demo](https://calculator-pwa-scs.herokuapp.com/) 
 
 <br />
 
@@ -76,6 +76,21 @@ Terminal or similar to execute the program.
 - $ npm i
 - $ npm start
 ```
+
+## Testing
+
+The testing has been performed using Jest Framework. 
+
+- To run the test please open the command line
+- Enter npm run test to run the testing once.
+- Enter npm run watch to keep jest test open
+
+```
+- $ cd React_Calculator1
+- $ npm run test
+
+```
+![Tests](test.png)
 
 
 ## Authors
